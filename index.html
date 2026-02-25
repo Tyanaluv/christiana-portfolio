@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nwoke Christiana | Data Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <nav>
+        <h3 class="logo"> Nwoke Christiana</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="content">
+        <h4>HELLO!</h4>
+        <h1>I'm <span>Nwoke Christiana</span></h1>
+        <h2>Data Analyst</h2>
+        <p>I analyze data to help businesses make better decisions.</p>
+
+        <div class="buttons">
+           <a href="https://www.youtube.com/@Nwoke_Christiana" target="_blank" class="btn">YOUTUBE</a>
+           <a href="https://github.com/Tyanaluv" target="_blank" class="btn">GITHUB</a>
+              <a href="https://www.linkedin.com/in/christianaokaformbah-068464223" target="_blank" class="btn">LINKEDIN</a>
+        </div>
+    </div>
+
+     <img src="profile.jpg" alt="My Photo">
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+    <div class="about-bg-text">ABOUT</div>
+
+    <div class="about-container">
+        <h2>About Me</h2>
+
+        <p>
+            I’m a Data Analyst who genuinely enjoys turning messy, complex data into clear and meaningful insights. 
+            For me, data isn’t just numbers, it’s a story waiting to be understood. I love digging into patterns, 
+            uncovering trends, and building dashboards that make decision making easier and smarter.
+        </p>
+
+        <p>
+            With experience in tools like Excel, SQL, Power BI, and Tableau, I focus on creating solutions that are 
+            practical, insightful, and impactful. I’m naturally curious, detail-oriented, and driven by results. 
+            Whether working independently or collaborating with a team, I’m committed to delivering analysis that 
+            adds real value to the business.
+        </p>
+
+        <a href="Resume.pdf" target="_blank" class="btn">Download Resume</a>
+    </div>
+</section>
+<!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+        <div class="project-card">
+             <img src="exam-performance.png" alt="Excel Dashboard">
+    <h3>Excel Dashboards</h3>
+    <p>Exam performance for top guide school.</p>
+    <a href="https://github.com/Tyanaluv/Excel-dashboards" target="_blank" class="btn-outline">View on GitHub</a>
+</div>
+
+        <div class="project-card">
+             <img src="monthly-report.png" alt="PowerBi Dashboard">
+    <h3>Monthly Statistics Call Report</h3>
+    <p>Analysis of monthly call performance using Excel and dashboards.</p>
+    <a href="https://github.com/Tyanaluv/Monthly-Statistics-Call-Report" target="_blank" class="btn-outline">View on GitHub</a>
+</div>
+
+        <div class="project-card">
+            <img src="real-estate.png" alt="Tableau Dashboard">
+    <h3>Real Estate in Nigeria Overview</h3>
+    <p>Analysis of real estate trends and market overview in Nigeria using Excel and dashboards.</p>
+    <a href="https://github.com/Tyanaluv/Real-Estate-in-Nigeria-Overview" target="_blank" class="btn-outline">View on GitHub</a>
+</div>
+        <div class="project-card">
+            <img src="linkedin-analytics.png" alt="PowerBi Dashboard">
+    <h3>LinkedIn Profile Analytics</h3>
+    <p>Analysis of LinkedIn profile data to gain insights on engagement and connections.</p>
+    <a href="https://github.com/Tyanaluv/Linkedin-Profile-Analytics" target="_blank" class="btn-outline">View on GitHub</a>
+</div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: okaformbahchristiana@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Nwoke Christiana | Data Analyst</p>
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const aboutSection = document.querySelector(".about-container");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    observer.observe(aboutSection);
+
+    // 🔥 Force check on load
+    if (aboutSection.getBoundingClientRect().top < window.innerHeight) {
+        aboutSection.classList.add("show");
+    }
+
+});
+</script>
+</body>
+</html>
